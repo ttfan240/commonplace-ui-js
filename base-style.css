@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+
+/* ===================================================================== */
+/*   Reset
+/* ===================================================================== */
+
+html {
+	font-size: 62.5%;  /* = 10px (if standard font size)  */
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+pre, code, kbd {
+	font-family: monospace, serif;
+}
+
+body {
+	color: #242424;
+	font-size: 1.4em;
+	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Arial, sans-serif;
+	line-height: 1.4;  /*  If smaller than 1.4, Japanese characters may be partially hidden  */
+}
+
+div, p, a,
+th, td, ul, ol, li, dl,
+input, textarea,
+h1, h2, h3, h4, h5, h6 {
+	color: inherit;
+	font-size: 100%;
+	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Arial, sans-serif;
+	font-weight: normal;
+	line-height: inherit;
+}
+
+ul, ol { list-style: none; }
+
+a { text-decoration: none; }
+
+input {
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+}
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+
+/* ===================================================================== */
+/*   Defaults
+/* ===================================================================== */
+
+h1 { font-size: 2.4rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+
+h1 {
+	font-weight: bold;
+}
+
+p {
+	margin: 1em 0;
+}
+
+li a {
+	line-height: 2;
+}
+
+
+.content-area a {
+	color: #0045ce;
+}
