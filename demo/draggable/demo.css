@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	background-color: #f6f6f6;
+	background-image: url(tile-50.png)
+}
+
+.content-area {
+	height: 2000px;
+	width: 1600px;
+	margin-left: 50px;
+}
+
+h1 {
+	line-height: 50px;
+	margin-bottom: 50px;
+}
+
+
+.static-draggables,
+.positioned-draggables {
+	height: 100px;
+}
+
+.draggable {
+	float: left;
+	font-size: 20px;
+	width: 40px;
+	line-height: 38px;
+	margin-right: 60px;
+	color: #444;
+	border: solid 1px #aaa;
+	background-color: #dadada;
+	border-radius: 4px;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	-ms-user-select: none;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/*  for test  */
+
+/* to test the number of significant digits */
+.static-draggables .b {
+	margin-right: 60.33333333px;
+}
+
+/* to test the `box-sizing` */
+.static-draggables .a {
+	box-sizing: content-box;
+	width: 38px;
+}
+
+
+.absolute-position {
+	position: absolute;
+}
+.relative-position {
+	position: relative;
+	left: 50px;
+}
+.fixed-position {
+	position: fixed;
+	left: 250px;
+}

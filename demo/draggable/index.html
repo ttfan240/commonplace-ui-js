@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>demo - draggable.js</title>
+	<link rel="stylesheet" type="text/css" href="../../base-style.css" />
+	<link rel="stylesheet" type="text/css" href="demo.css" />
+</head>
+<body>
+<div class="content-area">
+	<h1>draggable.js demo</h1>
+	<div class="static-draggables">
+		<div class="a draggable">A</div>
+		<div class="b draggable">B</div>
+		<div class="c draggable">C</div>
+	</div>
+	
+	<div class="positioned-draggables">
+		<div class="absolute-position">
+			<div class="x draggable">X</div>
+		</div>
+		<div class="relative-position">
+			<div style="width: 50px; height: 50px; float: left;"></div>
+			<div class="y draggable">Y</div>
+		</div>
+		<div class="fixed-position">
+			<div class="z draggable">Z</div>
+		</div>
+	</div>
+	
+	<p>A - <span class="monitor"></span></p>
+	<p>B - <span class="monitor"></span></p>
+	<p>C - <span class="monitor"></span></p>
+	<p>X - <span class="monitor"></span></p>
+	<p>Y - <span class="monitor"></span></p>
+	<p>Z - <span class="monitor"></span></p>
+	
+</div>
+<footer>
+	<script src="../../env.js"></script>
+	<script src="../../js/util.js"></script>
+	<script src="../../js/draggable.js"></script>
+	<script src="demo.js"></script>
+</footer>
+
+</body>
+</html>
